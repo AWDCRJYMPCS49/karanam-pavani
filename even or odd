@@ -1,0 +1,13 @@
+import java.io*;
+Class main
+{
+public static void main (String args[])
+{
+int(x%2==0)?System.out.println("even"):System.out.pprintln("odd");
+}
+}
+
+
+output:
+enter a number 8
+even
