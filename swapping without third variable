@@ -1,0 +1,21 @@
+import java.util.*;
+class Swap
+{
+public static void main(String args[])
+{
+System.out.println("enter the values of a and b");
+Scanner sc=new Scanner(System.in);
+int a=sc.nextint();
+int b=sc.nextint();
+System.out.println("before Swapping numbers:"+a+ +b);
+/*Swapping*/
+a=a+b;
+b=a-b;
+a=a-b;
+System.out.println("after Swapping:"+a+  +a);
+}
+}
+
+output:
+enter a=3 b=10
+a=10 b=5
