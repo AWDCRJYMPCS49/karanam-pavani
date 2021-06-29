@@ -1,0 +1,27 @@
+import java.uti.*;
+Public Class CountEvenAndOddDigits
+{
+Public static void main(string args[])
+{
+int 1234567;
+int Even Count=0;
+int Odd Count=0;
+while(num>0)
+{
+int rem=num%10;
+if(rem%2==0)
+{
+Even Count++;
+}
+else
+{
+odd Count++;
+}
+num=num%10;
+}
+System.out.println(number of Even numbers:"Even Count");
+System.out.println(number of odd numbers:"Odd Count");
+
+output:
+number of Even numbers=3
+number of Odd numbers=3
