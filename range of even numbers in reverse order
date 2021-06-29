@@ -1,0 +1,20 @@
+import java.util.*;
+Public class Revnum
+{
+public static void main(string args[])
+{
+int n=10,m=20
+int num,rev=0;
+while(n>0)
+{
+rem=n/2;
+rev=rev*10-rem;
+n=n/2;
+}
+System.out.println(rev)
+}
+}
+
+output:
+enter a number n=10,m=20
+20 18 16 12 10
