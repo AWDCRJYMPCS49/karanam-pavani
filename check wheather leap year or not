@@ -1,0 +1,24 @@
+import java.uitl.*;
+Public Class Leap year
+{
+Pubic Static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the year");
+int year=sc.nextint();
+if((int%4==0&&year%100!=0)||(year%4==0&&year%400==0))
+{
+System.out.println(year+"is a leap year");
+}
+else
+{
+System.out.println(year+ is"not a leap year")';
+}
+}
+}
+
+output:
+enter a number 2004
+leap year
+enter a number 2007
+not a leap year
