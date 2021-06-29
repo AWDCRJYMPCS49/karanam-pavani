@@ -1,0 +1,26 @@
+import java.util.*;
+Public Class VowelConsonant
+{
+Public Static void Main(string args[])
+{
+Char ch='z';
+Switch (ch)
+{
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':
+System.out.println(ch + "is Vowel");
+break;
+System.out.println(ch + "is consonant");
+}
+}|
+}|
+
+
+output:
+enter a letter 
+u - is vowel
+enter a letter 
+p- is consonant
