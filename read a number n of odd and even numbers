@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class EvenOddUsingForLoop
+{
+   public static void main(String[] args)
+   {
+      int a;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter number(max) to print all even and odd until: ");
+      int number = sc.nextInt();
+      System.out.println("Even numbers from 1 to " + number + " are: ");
+      for(a = 1; a <= number; a++)
+      {
+         if(a % 2 == 0)
+         {
+            System.out.print(a + " ");
+         }
+      }
+      System.out.println("Odd numbers from 1 to " + number + " are: ");
+      for(a = 1; a <= number; a++)
+      {
+         if(a % 2 == 1)
+         {
+            System.out.print(a + " ");
+         }
+      }
+      sc.close();
+   }
+}
+ouput:even numbers from 1to 10
+2 4 6 8 19 
+enter numbers from 1 to 10
+1 3 5 7 9
+
