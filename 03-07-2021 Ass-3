@@ -1,0 +1,32 @@
+import java.util.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+            int n,num,r=0;
+            Scanner sc=new Scanner(System.in);
+            n=sc.nextInt();
+            num=n*n;
+            r=num%100;
+            if(n==r)
+            System.out.println("Automorphic");
+            else
+            System.out.println("Not Automorphic");
+        }
+}
+
+output:
+76
+
+Automorphic
+
+
+
+3
+
+Not Automorphic
+
+
+
+
+
