@@ -1,0 +1,61 @@
+import java.util.*;
+class Main
+{
+public static void main(String args[])
+{
+    int n;
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+int Z=n*2-1;
+char[][]A=new char[Z+1][Z+1];
+int start,end,i,j;
+start=0;
+end=Z-1;
+char ch='A';
+while(n!=0)
+{
+for(i=start;i<=end;i++)
+{
+for(j=start;j<=end;j++)
+{
+if(i==start||i==end||j==start||j==end)
+{
+A[i][j]=ch;
+}
+}
+}
+n--;
+ch++;
+start++;
+end--;
+}
+for(i=0;i<Z;i++)
+{
+for(j=0;j<=Z;j++)
+{
+System.out.print(A[i][j]+" ");
+}
+System.out.print("\n");
+}
+}
+}
+
+output:
+4
+
+A A A A A A A  
+
+A B B B B B A  
+
+A B C C C B A  
+
+A B C D C B A  
+
+A B C C C B A  
+
+A B B B B B A  
+
+A A A A A A A  
+
+
+
