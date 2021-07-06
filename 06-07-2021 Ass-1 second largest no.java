@@ -21,3 +21,6 @@ class Main
       System.out.println("second largest number is"+arr[k-2]);
    }
 }
+  
+output:
+second largest number is4
