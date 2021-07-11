@@ -5,10 +5,12 @@ class Main
     {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a String");
-        String str=sc.next();
+        String rev=sc.next();
         int i;
         char []arr=str.toCharArray();
         for(i=arr.length-1;i>=0;i--)
+        {
+            rev+=arr[i];
             System.out.print(arr[i]);
     }
 }
