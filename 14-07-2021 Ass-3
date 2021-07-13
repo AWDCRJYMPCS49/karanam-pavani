@@ -1,0 +1,25 @@
+import java.util.*;
+class Main 
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter a String");
+String str=sc.nextLine();
+System.out.println("Total number of words"+words(str)+ " ");
+}
+public static int words(String str)
+{
+int count=0;
+String str1[]=str.split(" "); 
+count=str1.length; 
+return count;
+}
+}
+
+Output:
+Enter a String
+
+My name is pavani
+
+Total number of words 4 
