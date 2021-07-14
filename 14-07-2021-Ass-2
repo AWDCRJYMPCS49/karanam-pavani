@@ -1,0 +1,28 @@
+import java.util.*;
+class Main 
+{ 
+public static void main(String args[])
+{ 
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter a number"); 
+int n=sc.nextInt();
+factorial(n);
+}
+static void factorial(int n)
+{
+int i,fact=1;
+for(i=1;i<=n;i++)
+{
+fact=fact*i;
+}
+System.out.print("Factorial of "+n+"is "+fact); 
+}
+}
+
+
+Output:
+Enter a number
+
+5
+
+Factorial of 5is 120
