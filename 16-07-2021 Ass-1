@@ -4,15 +4,16 @@ class Main
 public static void main(String args[])
   {
    ArrayList<String>A=new ArrayList<String>();
-          A.add("Red");
-          A.add("Blue");
-          A.add("Green");
-          A.add("Pink");
+          A.add("10");
+          A.add("20");
+          A.add("30");
+          A.add("40");
           System.out.println("First array"+A);
           ArrayList<String>B=new ArrayList<String>();
-          B.add("White");
-          B.add("Yellow");
-          B.add("Pink");
+          B.add("100");
+          B.add("200");
+          B.add("300");
+          B.add("400");
           System.out.println("Second array"+B);
         ArrayList<String>C=new ArrayList<String>();
         C.addAll(A);
@@ -22,8 +23,8 @@ public static void main(String args[])
 }
 
 Output:
-First array[Red, Blue, Green, Pink]
+First array[10, 20, 30, 40]
 
-Second array[White, Yellow, Pink]
+Second array[100, 200, 300, 400]
 
-New array[Red, Blue, Green, Pink, White, Yellow, Pink]
+New array[10, 20, 30, 40, 100, 200, 300, 400]
