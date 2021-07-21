@@ -1,0 +1,41 @@
+import java.util.*;
+class Main
+{
+    public static void main(String args[]) 
+    {
+         Stack<Integer>stack=new Stack<Integer>();
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter array size");
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        System.out.println("Enter elements");
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+            stack.push(a[i]);
+        }
+        System.out.println("Even elements are");
+        removeodd(stack,n);
+    }
+    static void removeodd(Stack<Integer>stack,int n)
+    {
+        for(int i:stack)
+        {
+            if(i%2==0)
+                System.out.print(i+" ");
+        }
+    }
+}
+
+Output:
+Enter array size
+
+5
+
+Enter elements
+
+10 15 20 25 30
+
+Even elements are
+
+10 20 30 
