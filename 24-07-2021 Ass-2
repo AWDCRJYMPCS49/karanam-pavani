@@ -1,0 +1,46 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[]) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter array size");
+        int n=sc.nextInt();
+        String arr[]= new String[n];
+        HashSet h=new HashSet();
+        System.out.println("Enter array elements");
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.next();
+        }
+        System.out.println("Elements using Iterator");
+        for(int i=0;i<n;i++)
+        {
+            h.add(arr[i]);
+        }
+        Iterator itr=h.iterator();
+        while(itr.hasNext())
+        {
+            String i=(String)itr.next();
+            System.out.println(i+" ");
+        }
+    }
+}
+
+Output:
+Enter array size
+4
+
+Enter array elements
+
+grapes oranges pineapple banana
+
+Elements using Iterator
+
+banana 
+
+oranges 
+
+pineapple 
+
+grapes 
