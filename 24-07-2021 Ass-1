@@ -1,0 +1,47 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[]) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter array size");
+        int n=sc.nextInt();
+        String arr[]= new String[n];
+        ArrayList al=new ArrayList();
+        System.out.println("Enter array elements");
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.next();
+        }
+        System.out.println("Elements using Iterator");
+        for(int i=0;i<n;i++)
+        {
+            al.add(arr[i]);
+        }
+        Iterator itr=al.iterator();
+        while(itr.hasNext())
+        {
+            String i=(String)itr.next();
+            System.out.println(i+" ");
+        }
+    }
+}
+
+output:
+Enter array size
+
+4
+
+Enter array elements
+
+pineapple apple orange grapes
+
+Elements using Iterator
+
+pineapple 
+
+apple 
+
+orange 
+
+grapes 
