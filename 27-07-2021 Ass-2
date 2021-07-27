@@ -1,0 +1,18 @@
+class Solution {
+    public int trailingZeroes(int n) {
+        int fact=1;
+        for(int i=1;i<=n;i++)
+        {
+             fact= fact*i;
+        int count =0;
+        while(fact!=0)
+        {
+            int f=fact%10;
+            if(f==0)
+                count++;
+            f=f/10;
+        }
+        }
+        return count;
+    }
+}
