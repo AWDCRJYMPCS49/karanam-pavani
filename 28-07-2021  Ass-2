@@ -18,7 +18,7 @@ prime[i]=false;
 }
 }
 }
-public static void main(String[] args) throws IOException
+public static void main(String[] args)throws IOException
 {
 sieve(n);
 int t;
@@ -29,8 +29,8 @@ while(t>0)
 int l,r;
 int sum=0;
 String ab[]=br.readLine().trim().split("\\s+");
-l = Integer.parseInt(ab[0]);
-r = Integer.parseInt(ab[1]);
+l= Integer.parseInt(ab[0]);
+r= Integer.parseInt(ab[1]);
 for(int i=l;i<=r;i++)
 {
 if(prime[i]==true) 
