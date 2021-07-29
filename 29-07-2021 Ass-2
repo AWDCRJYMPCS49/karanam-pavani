@@ -36,9 +36,11 @@ public static void main(String args[])
 {
 int n;
 Scanner sc=new Scanner(System.in);
+System.out.println("Enter number");
 n=sc.nextInt();
 sieve();
 int count=0;
+System.out.println("reverse order");
 for(int k=n-1;k>=0;k--)
 {
 System.out.println(arr[k]);
