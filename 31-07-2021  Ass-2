@@ -1,7 +1,7 @@
 import java.util.*;
 class Main
 {
-static int N=2000005;
+static int N=1000005;
 public static int prime[]=new int[N];
 public static int arr[]=new int[N];
 static void sieve()
