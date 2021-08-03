@@ -1,0 +1,35 @@
+import java.util.*;
+class Main
+{
+ static int N=1000;
+ static int prefix[]=new int[N];
+ static int arr[]=new int[N];
+public static void prefix()
+ {
+   int k=0;
+    for(int i=0;i<N;i++)
+    {
+       if(i%2==0)
+        {
+         arr[k]=i;
+         k++;  
+        }
+     }
+     prefix[0]=arr[0];
+     for(int i=1;i<N;i++)
+         prefix[i]=prefix[i-1]+arr[i];
+   }
+  public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   System.out.println("Enter a number");
+   int t=sc.nextInt();
+   while(t>0)
+   {
+     int n=sc.nextInt();
+     prefix();
+     System.out.println(prefix[n]);
+     t--;
+    }  
+  }
+}
